@@ -6,7 +6,7 @@ nodejs.env() {
 }
 
 nodejs.table() {
-	p.run_bash 'nodejs'
+	p.run_filter 'nodejs.sh'
 }
 
 nodejs.install() {

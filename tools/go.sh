@@ -12,7 +12,7 @@ go.env() {
 
 go.table() {
 	p.fetch 'https://go.dev/dl' \
-		| perl "$BASALT_PACKAGE_DIR/pkg/src/filters/go.pl"
+		| p.run_filter 'go.pl'
 }
 
 go.install() {

@@ -11,7 +11,7 @@ deno.env() {
 
 deno.table() {
 	p.fetch_github_release 'denoland/deno' \
-		| p.run_jq 'deno'
+		| p.run_filter 'deno.jq'
 }
 
 deno.install() {
