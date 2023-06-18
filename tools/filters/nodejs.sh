@@ -1,5 +1,4 @@
 # shellcheck shell=bash
-source "${0%/*}/util/util.sh"
 
 parse_nodejs() {
 	local nodejs_url='https://nodejs.org/download/release/index.json'
